@@ -2,15 +2,13 @@
 #be changed to make it work
 
 a = 10
-b = 20
-c = 30
 
 def first_func(b=20):
     c = 30
-    value = second_func()
+    value = second_func(b, c)
     return value
 
-def second_func(d=40):
+def second_func(b, c, d=40):
     e = 50
     return a + b + c + d + e
 
